@@ -1,8 +1,4 @@
-// // optionally configure local env vars
-// require('dotenv').config()
-
-// // details in https://css-tricks.com/using-netlify-forms-and-netlify-functions-to-build-an-email-sign-up-widget
-const process = require("process");
+/* const process = require("process");
 const sgMail = require("@sendgrid/mail");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -38,3 +34,4 @@ const handler = async (event) => {
 };
 
 module.exports = { handler };
+ */

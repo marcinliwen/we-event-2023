@@ -1,40 +1,40 @@
-const sendGridMail = require("@sendgrid/mail");
+// // optionally configure local env vars
+// require('dotenv').config()
+
+// // details in https://css-tricks.com/using-netlify-forms-and-netlify-functions-to-build-an-email-sign-up-widget
+const process = require("process");
+const sgMail = require("@sendgrid/mail");
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const handler = async (event) => {
-  console.log(event);
+  console.log("event: ", event);
   try {
-    const { name, email, message } = JSON.parse(event.body).payload.data;
+    const { data } = JSON.parse(event.body).payload;
 
-    console.log(`name: ${name}, email: ${email}, message: ${message}`);
-
-    sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
-    const html = `
-      <div> 
-         Hi ${name}! <br><br>
-         Thanks for getting in touch.
-         We have received your message
-         and one of our customer care
-         representatives will get in
-         touch shortly
-         <br><br>
-         Best <br>
-         John Doe
-      </div>
-    `;
-    const mail = {
-      from: process.env.SENDER_EMAIL,
-      to: email,
-      subject: "We have received your message",
-      html,
+    const msg = {
+      to: "test@example.com", // Change to your recipient
+      from: process.env.SENDER_EMAIL, // Change to your verified sender
+      subject: "Sending with SendGrid is Fun",
+      text: "and easy to do anywhere, even with Node.js",
+      html: "<strong>and easy to do anywhere, even with Node.js</strong>",
     };
-    await sendGridMail.send(mail);
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: "Email sent" }),
-    };
+    console.log(`Received a submission: ${data.email}`);
+    await sgMail
+      .send(msg)
+      .then(() => {
+        console.log("Email sent");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   } catch (error) {
     return { statusCode: 422, body: String(error) };
   }
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Email sent" }),
+  };
 };
 
 module.exports = { handler };

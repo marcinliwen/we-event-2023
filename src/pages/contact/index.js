@@ -39,7 +39,7 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout  pageName="Contact">
+      <Layout pageName="Contact">
         <PageTitle title="Contact" />
         <section className="section py-12">
           <div className="container">
@@ -58,7 +58,9 @@ export default class Index extends React.Component {
                     />
                     <div>
                       <p className="block text-lg">Phone</p>
-                      <a rel="nofollow"  href="tel:(+32) 2 880 20 34">(+32) 2 880 20 34</a>
+                      <a rel="nofollow" href="tel:(+32) 2 880 20 34">
+                        (+32) 2 880 20 34
+                      </a>
                     </div>
                   </div>
 
@@ -72,7 +74,10 @@ export default class Index extends React.Component {
                     <div>
                       <p className="block text-lg">Email</p>
 
-                      <a rel="nofollow"  href="mailto:info@watercoolerseurope.eu">
+                      <a
+                        rel="nofollow"
+                        href="mailto:info@watercoolerseurope.eu"
+                      >
                         info@watercoolerseurope.eu
                       </a>
                     </div>
@@ -93,7 +98,7 @@ export default class Index extends React.Component {
                   </div>
                   <div className="mb-8">
                     <a
-                    rel="nofollow" 
+                      rel="nofollow"
                       className="text-pink"
                       href="http://www.watercoolerseurope.eu"
                     >
@@ -119,7 +124,9 @@ export default class Index extends React.Component {
                     />
                     <div>
                       <p className="block text-lg">Phone</p>
-                      <a rel="nofollow"  href="tel:+48 508 399 182">+48 508 399 182</a>
+                      <a rel="nofollow" href="tel:+48 508 399 182">
+                        +48 508 399 182
+                      </a>
                     </div>
                   </div>
                   <div className="mb-8 flex">
@@ -131,7 +138,7 @@ export default class Index extends React.Component {
                     />
                     <div>
                       <p className="block text-lg">Email</p>
-                      <a rel="nofollow"  href="mailto:office@ideamarketing.pl">
+                      <a rel="nofollow" href="mailto:office@ideamarketing.pl">
                         office@ideamarketing.pl
                       </a>
                     </div>
@@ -168,7 +175,7 @@ export default class Index extends React.Component {
                   onSubmit={this.handleSubmit}
                 >
                   {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="form_name" value="contact" />
                   <div hidden>
                     <label>
                       Don’t fill this out:{" "}
@@ -306,11 +313,10 @@ export default class Index extends React.Component {
                       <span className="ml-2">
                         I hereby accept the{" "}
                         <a
-                        rel="noreferrer"
+                          rel="noreferrer"
                           href="/private-policy-we.pdf"
                           className="text-pink"
                           target="_blank"
-                         
                         >
                           PRIVACY POLICY
                         </a>{" "}
@@ -318,7 +324,7 @@ export default class Index extends React.Component {
                       </span>
                     </label>
                   </div>
-                  
+
                   <button
                     className="bg-green hover:bg-greenhover py-4 px-8 text-white mx-auto my-4 block text-2xl w-full"
                     type="submit"
@@ -330,8 +336,6 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
-        
-         
       </Layout>
     );
   }

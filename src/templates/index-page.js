@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import { SEO } from "../components/seo";
+import { SEO } from "../components/Seo";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({ image, category }) => {

@@ -6,7 +6,7 @@ import PageTitle from "../components/PageTitle";
 import PageSubtitle from "../components/PageSubtitle";
 import { StaticImage } from "gatsby-plugin-image";
 import StandTemplate from "../data/standtemplate.json";
-import { SEO } from "../components/seo";
+import { SEO } from "../components/Seo";
 
 export const TradeFairTemplate = ({ title, tradefair, fees }) => {
   const fullStands = StandTemplate.filter((item) => item.name.length > 0).sort(

@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import PageTitle from "../components/PageTitle";
 import PageSubtitle from "../components/PageSubtitle";
 import Fee from "../components/Fee";
-import { SEO } from "../components/seo";
+import { SEO } from "../components/Seo";
 
 export const EventProgrammeTemplate = ({ title }) => {
   return (

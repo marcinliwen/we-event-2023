@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import PageTitle from "../components/PageTitle";
-import { SEO } from "../components/seo";
+import { SEO } from "../components/Seo";
 
 export const AquaAwardsTemplate = ({ title }) => {
   return (

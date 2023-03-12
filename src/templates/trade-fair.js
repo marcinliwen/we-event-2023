@@ -65,7 +65,9 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
               `}
                   >
                     <span className="w-[108px]">{item.stand}</span>
-                    <span className="block text-left  flex-1">{item.name}</span>
+                    <span className="block text-left  flex-1 uppercase">
+                      {item.name}
+                    </span>
                   </li>
                 );
               })}

@@ -339,7 +339,6 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
                   {/*  <input type="text" name="stand-no" required /> */}
                   <div className="custom-select">
                     <select name="stand-no" required>
-                      <option value="S31 9m2">S31 9m&sup2;</option>
                       <option value="S22 9m2">S22 9m&sup2;</option>
                       <option value="S21 9m2">S21 9m&sup2;</option>
                       <option value="S09 9m2">S09 9m&sup2;</option>

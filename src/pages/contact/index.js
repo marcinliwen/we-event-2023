@@ -22,7 +22,7 @@ export default class Index extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleSubmit = (e) => {
+  /*  handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     fetch("/.netlify/functions/submission-created", {
@@ -35,7 +35,7 @@ export default class Index extends React.Component {
     })
       .then(() => navigate(form.getAttribute("action")))
       .catch((error) => alert(error));
-  };
+  }; */
 
   render() {
     return (
@@ -169,7 +169,7 @@ export default class Index extends React.Component {
                 <form
                   name="contact"
                   method="post"
-                  action="/contact/thanks/"
+                  action="/contact/thanks"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                   onSubmit={this.handleSubmit}

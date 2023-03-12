@@ -1,0 +1,128 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+local_backend: true
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Home Page"
+        name: "index"
+        fields:
+          - {label: Banner, name: image, widget: image }
+          - {
+              label: Category,
+              name: category,
+              widget: list,
+              fields: [
+                {label: Image, name: image, widget: image },
+                {label: Title, name: title, widget: string },
+                {label: Description, name: description, widget: text },
+                {label: Link, name: link, widget: string }
+              ]  
+            }               
+      - file: "src/pages/venue-and-accommodation/index.md"
+        label: "Venue & Accommodation"
+        name: 'venue-and-accommodation'
+        fields:
+          - label: 'Venue' 
+            name: 'venue' 
+            widget: 'object'  
+            fields: 
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: body, widget: markdown }
+              - { label: Image, name: image, widget: image }
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields: [
+              { label: Image, name: image, widget: image}
+            ]
+      - file: "src/pages/trade-fair/index.md"
+        label: "Trade Fair"
+        name: "trade-fair"
+        fields:
+          - label: 'Tradefair'
+            name: 'tradefair'
+            widget: 'object'
+            fields:
+              [
+                {label: Description, name: description, widget: text },
+                {label: Image, name: image, widget: image }
+              ]
+          - label: 'Fees'
+            name: 'fees'
+            widget: 'object'
+            fields:
+            - {label: Image, name: image, widget: image }
+      - file: "src/pages/event-programme/index.md"
+        label: "Event Programme"
+        name: "event-programme-page"
+        fields:
+          - label: 'Event'
+            name: 'event'
+            widget: 'object'
+            fields: 
+              [
+                {label: 'Plan Conference', name: 'image_conf', widget: 'image' },
+                {label: 'Plan Workshops', name: 'image_work', widget: 'image' }
+              ]
+          - label: 'Event List'  
+            name: 'eventList' 
+            widget: 'list' 
+            fields: [
+              {label: Title, name: title, widget: string },
+              {label: Description, name: text, widget: markdown },
+              {label: Image, name: image, widget: image }
+            ]
+          - label: 'Conference Speakers'
+            name: 'conference' 
+            widget: 'list' 
+            fields: 
+              [
+                {label: Image, name: image, widget: image },
+                {label: Name, name: name, widget: string},
+                {label: Role, name: role, widget: string},
+                {label: Resume, name: resume, widget: text},
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: text},
+              ]
+          - label: 'Workshops Speakers' 
+            name: 'workshops' 
+            widget: 'list' 
+            fields: 
+              [
+                {label: Image, name: image, widget: image },
+                {label: Name, name: name, widget: string},
+                {label: Role, name: role, widget: string},
+                {label: Resume, name: resume, widget: text},
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: text},
+              ]
+      - file: "src/pages/aqua-awards/index.md"
+        label: "Aqua Aqards"
+        name: "aqua-awards-page"
+        fields:
+          - label: 'Info'
+            name: 'info'
+            widget: 'list'
+            fields:
+              - {label: Title, name: title, widget: string }
+              - {label: Description, name: text, widget: markdown }
+              - {label: Image, name: image, widget: image }
+      - file: "src/pages/registration.md"
+        label: "Registration"
+        name: "registration-page"
+        fields:
+          - {label: Title, name: title, widget: string }

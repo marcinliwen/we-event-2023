@@ -14,7 +14,28 @@ const handler = async (event, context) => {
     switch (data["form-name"]) {
       case "contact":
         msg = {
-          to: data.email, // Change to your recipient
+          personalizations: [
+            {
+              to: [
+                {
+                  email: data.email,
+                  name: data.company_name,
+                },
+              ],
+            },
+            {
+              from: {
+                email: process.env.SENDER_EMAIL,
+                name: process.env.SENDER_EMAIL,
+              },
+              to: [
+                {
+                  email: data.email,
+                  name: data.company_name,
+                },
+              ],
+            },
+          ], // Change to your recipient
           from: process.env.SENDER_EMAIL, // Change to your verified sender
           subject: "Thank you for contakt us!",
           text: "Thank you for contakt us!",
@@ -23,7 +44,28 @@ const handler = async (event, context) => {
         };
       case "stand_application_form":
         msg = {
-          to: data.email, // Change to your recipient
+          personalizations: [
+            {
+              to: [
+                {
+                  email: data.email,
+                  name: data.company_name,
+                },
+              ],
+            },
+            {
+              from: {
+                email: process.env.SENDER_EMAIL,
+                name: process.env.SENDER_EMAIL,
+              },
+              to: [
+                {
+                  email: data.email,
+                  name: data.company_name,
+                },
+              ],
+            },
+          ], // Change to your recipient
           from: process.env.SENDER_EMAIL, // Change to your verified sender
           subject: "Thank you for submitting your application",
           text: "The organizer will be in touch with you shortly",

@@ -14,6 +14,8 @@ const handler = async (event) => {
       subject: "Sending with SendGrid is Fun",
       text: "and easy to do anywhere, even with Node.js",
       html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+      name: data.name,
+      template_id: " d-f8c24a04d6314ea9a6e035933de4d34f",
     };
     console.log(`Received a submission: ${data.email}`);
     await sgMail

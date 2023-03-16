@@ -32,7 +32,7 @@ export const AquaAwardsTemplate = ({ title }) => {
                   industry in marketing, innovation and public relations, as
                   well as products and programmes which enhance sustainability
                 </p>
-                {/*             <a href="/Aqua_Awards_Brochure_2022.pdf" className="py-3 px-4 bg-green text-white block hover:bg-greenhover ease-in-out duration-300 w-max" target="_blank" rel="noreferrer">Aqua Awards Brochure download pdf</a>
+                {/*             <a href="" className="py-3 px-4 bg-green text-white block hover:bg-greenhover ease-in-out duration-300 w-max" target="_blank" rel="noreferrer">Aqua Awards Brochure download pdf</a>
                  */}{" "}
               </div>
             </div>

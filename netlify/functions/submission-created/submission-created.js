@@ -1,4 +1,4 @@
-/* const process = require("process");
+const process = require("process");
 const sgMail = require("@sendgrid/mail");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -9,7 +9,7 @@ const handler = async (event) => {
     const { data } = JSON.parse(event.body).payload;
 
     const msg = {
-      to: "test@example.com", // Change to your recipient
+      to: data.email, // Change to your recipient
       from: process.env.SENDER_EMAIL, // Change to your verified sender
       subject: "Sending with SendGrid is Fun",
       text: "and easy to do anywhere, even with Node.js",
@@ -34,4 +34,3 @@ const handler = async (event) => {
 };
 
 module.exports = { handler };
- */

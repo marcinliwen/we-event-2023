@@ -23,25 +23,13 @@ const handler = async (event, context) => {
                 },
               ],
             },
-            {
-              from: {
-                email: process.env.SENDER_EMAIL,
-                name: process.env.SENDER_EMAIL,
-              },
-              to: [
-                {
-                  email: data.email,
-                  name: data.company_name,
-                },
-              ],
-            },
           ], // Change to your recipient
           from: process.env.SENDER_EMAIL, // Change to your verified sender
           subject: "Thank you for contakt us!",
           text: "Thank you for contakt us!",
-          name: data.name,
-          template_id: "d-f8c24a04d6314ea9a6e035933de4d34f ",
+          template_id: "d-f8c24a04d6314ea9a6e035933de4d34f",
         };
+        break;
       case "stand_application_form":
         msg = {
           personalizations: [
@@ -53,25 +41,15 @@ const handler = async (event, context) => {
                 },
               ],
             },
-            {
-              from: {
-                email: process.env.SENDER_EMAIL,
-                name: process.env.SENDER_EMAIL,
-              },
-              to: [
-                {
-                  email: data.email,
-                  name: data.company_name,
-                },
-              ],
-            },
           ], // Change to your recipient
           from: process.env.SENDER_EMAIL, // Change to your verified sender
           subject: "Thank you for submitting your application",
           text: "The organizer will be in touch with you shortly",
-          name: data.name,
           template_id: "d-2497f4e79b5941ca9bd6a626cf94441d",
         };
+        break;
+      default:
+        console.log("something wron");
     }
 
     console.log(`Received a submission: ${data.email}`);

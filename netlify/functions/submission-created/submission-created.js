@@ -7,8 +7,9 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.handler = async (event) => {
   const { data } = JSON.parse(event.body).payload;
-
-  console.log(data["form-name"]);
+  console.log(`Received a submission: ${data.email}`);
+  console.log("target: ", data["form-name"]);
+  console.log("data", data);
 
   const msg = {
     to: data.email,
@@ -20,8 +21,9 @@ exports.handler = async (event) => {
       name: data.contact_person,
     },
   };
-  console.log(`Received a submission: ${data.email}`);
+
   await sgMail.send(msg);
+
   return {
     statusCode: 200,
     body: JSON.stringify({ message: "Email sent" }),

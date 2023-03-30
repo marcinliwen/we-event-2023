@@ -11,16 +11,23 @@ exports.handler = async (event) => {
   console.log("target: ", data["form-name"]);
   console.log("data", data);
 
+  const is_contact = data.referrer.match(/(\/contact)/);
   const msg = {
     to: data.email,
     from: process.env.SENDER_EMAIL, // Change to your verified sender
-    subject: "Thank you for submitting your application",
+    subject: is_contact
+      ? "Thank you for contact us"
+      : "Thank you for submitting your application",
     text: "The organizer will be in touch with you shortly",
-    template_id: "d-2497f4e79b5941ca9bd6a626cf94441d",
+    template_id: is_contact
+      ? "d-f8c24a04d6314ea9a6e035933de4d34f"
+      : "d-2497f4e79b5941ca9bd6a626cf94441d",
     dynamicTemplateData: {
       name: data.contact_person,
     },
   };
+
+  console.log("msg", msg);
 
   await sgMail.send(msg);
 

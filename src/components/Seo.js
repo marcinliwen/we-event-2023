@@ -49,7 +49,7 @@ export const SEO = ({ pageName, location }) => {
       {location === "/" ? (
         <meta
           name="google-site-verification"
-          content="2Tsu7Q9ZqKdksBeYLBS4tJHjRABjswNbcZhddMN1YzQ"
+          content="N-z9nPeiyyPvUuS2J22ueYkq4ZhGGOTEBHjNGWQWxtk"
         />
       ) : (
         ""

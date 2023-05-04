@@ -19,58 +19,59 @@ export const IndexPageTemplate = ({ image, category }) => {
           }}
         />
       </div>
-      <div className="container max-w-[650px]  py-12">
-        <h2 className="text-center mb-8 text-2xl">
-          WE Chair’s Welcome Address
-        </h2>
-        <p className="mb-4">
-          With great expectations and pleasure, Watercoolers Europe will
-          celebrate its 30 th year anniversary in the beautiful city of Vienna,
-          Austria.
-        </p>
-        <p className="mb-4">
-          That is 30 years of promoting healthy hydration; 30 years of
-          communication with legislators around Europe to support the Industry;
-          30 years of product innovation and development; and 30 years of
-          dedicated work to protect our members’ investments.
-        </p>
-        <p className="mb-4">
-          I take this opportunity to thank both our past and present members who
-          have created one of the safest, modern and exciting water dispenser
-          markets in the world – here in Europe.
-        </p>
-        <p className="mb-4">
-          As we see at every WE event, the development continues. The market
-          potential for our Industry is still huge and the need for healthy
-          hydration is becoming increasingly relevant in our lives.
-        </p>
-        <p className="mb-4">
-          The event in Vienna promises to be a door opener for fresh business
-          ideas and to make new valuable contacts.
-        </p>
-        <p className="mb-4">
-          There will be a warm welcome to members of ICBWA (International
-          Council of Bottled Water Associations) who will join us in Vienna,
-          bringing valued expertise from other continents.
-        </p>
-        <p className="mb-4">
-          And last, but not least, we have the annual WE Gala Dinner and Aqua
-          Awards in the magnificent Palais Ferstel – a wonderful evening that
-          nobody from our Industry should miss.
-        </p>
-        <p className="mb-4">I will be delighted to welcome you to Vienna.</p>
-        <div className="md:grid md:grid-cols-2 mt-14">
-          <div className="md:justify-self-start">
+      <div className="container py-12">
+        <div className="md:grid md:grid-cols-5 gap-8">
+          <div className="col-span-3 prose prose-p:text-sm prose-p:my-3">
+            <h2 className="text-center mb-8 text-2xl">
+              WE Chair’s Welcome Address
+            </h2>
+            <p>
+              With great expectations and pleasure, Watercoolers Europe will
+              celebrate its 30 th year anniversary in the beautiful city of
+              Vienna, Austria.
+            </p>
+            <p>
+              That is 30 years of promoting healthy hydration; 30 years of
+              communication with legislators around Europe to support the
+              Industry; 30 years of product innovation and development; and 30
+              years of dedicated work to protect our members’ investments.
+            </p>
+            <p>
+              I take this opportunity to thank both our past and present members
+              who have created one of the safest, modern and exciting water
+              dispenser markets in the world – here in Europe.
+            </p>
+            <p>
+              As we see at every WE event, the development continues. The market
+              potential for our Industry is still huge and the need for healthy
+              hydration is becoming increasingly relevant in our lives.
+            </p>
+            <p>
+              The event in Vienna promises to be a door opener for fresh
+              business ideas and to make new valuable contacts.
+            </p>
+            <p>
+              There will be a warm welcome to members of ICBWA (International
+              Council of Bottled Water Associations) who will join us in Vienna,
+              bringing valued expertise from other continents.
+            </p>
+            <p>
+              And last, but not least, we have the annual WE Gala Dinner and
+              Aqua Awards in the magnificent Palais Ferstel – a wonderful
+              evening that nobody from our Industry should miss.
+            </p>
+            <p>I will be delighted to welcome you to Vienna.</p>
+
+            <StaticImage src="../img/podpis.png" alt="M.Mariotti" width={180} />
+            <h3 className="mb-0">Marzia Mariotti</h3>
+            <h3>WE Chair</h3>
+          </div>
+          <div className="col-span-2">
             <StaticImage
               src="../img/m-mariotti.png"
               alt="M.Mariotti"
-              class="w-full md:max-w-[280px] "
+              class="w-full"
             />
-          </div>
-          <div className="mb-8 md:mb-0 md:self-end">
-            <StaticImage src="../img/podpis.png" alt="M.Mariotti" />
-            <h3>Marzia Mariotti</h3>
-            <p>WE Chair</p>
           </div>
         </div>
       </div>

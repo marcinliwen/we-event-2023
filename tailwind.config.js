@@ -30,6 +30,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
     function ({ addComponents }) {
       addComponents({
         ".container": {

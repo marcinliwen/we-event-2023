@@ -20,11 +20,11 @@ export const IndexPageTemplate = ({ image, category }) => {
         />
       </div>
       <div className="container py-12">
-        <div className="md:grid md:grid-cols-5 gap-8">
-          <div className="col-span-3 prose prose-p:text-sm prose-p:my-3">
-            <h2 className="text-center mb-8 text-2xl">
-              WE Chair’s Welcome Address
-            </h2>
+        <h2 className="text-center mb-8 text-4xl">
+          WE Chair’s Welcome Address
+        </h2>
+        <div className="md:grid md:grid-cols-8 gap-8">
+          <div className="col-span-5 prose prose-p:text-sm prose-p:mb-3 prose-p:mt-0 prose-h4:mt-0">
             <p>
               With great expectations and pleasure, Watercoolers Europe will
               celebrate its 30 th year anniversary in the beautiful city of
@@ -63,10 +63,10 @@ export const IndexPageTemplate = ({ image, category }) => {
             <p>I will be delighted to welcome you to Vienna.</p>
 
             <StaticImage src="../img/podpis.png" alt="M.Mariotti" width={180} />
-            <h3 className="mb-0">Marzia Mariotti</h3>
-            <h3>WE Chair</h3>
+            <h4 className="mb-0">Marzia Mariotti</h4>
+            <h4>WE Chair</h4>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-3">
             <StaticImage
               src="../img/m-mariotti.png"
               alt="M.Mariotti"

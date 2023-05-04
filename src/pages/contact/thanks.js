@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
-
+import { SEO } from "../../components/Seo";
 // eslint-disable-next-line
 export default (props) => {
   return (
@@ -59,3 +59,7 @@ export default (props) => {
     </Layout>
   );
 };
+
+export const Head = () => (
+  <SEO location={"/contact/thanks"} pageName={"thank you"} />
+);

@@ -64,7 +64,6 @@ export const IndexPageTemplate = ({ image, category }) => {
             <StaticImage
               src="../img/m-mariotti.png"
               alt="M.Mariotti"
-              width="280"
               class="w-full md:max-w-[280px] "
             />
           </div>

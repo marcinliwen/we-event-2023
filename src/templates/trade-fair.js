@@ -341,7 +341,7 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
                     <select name="stand-no" required>
                       <option value="S09 9m2">S09 9m&sup2;</option>
                       <option value="S07 12m2">S07 12m&sup2;</option>
-                      <option value="S07 12m2">S03 12m&sup2;</option>
+                      <option value="S07 12m2">S23 9m&sup2;</option>
                     </select>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

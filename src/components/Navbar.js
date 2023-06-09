@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import logo from "../img/we-logo.png";
 import Mdv_logo from "../img/MDV_Logo.png";
+import food_logo from "../img/food-logo.png";
 import AW_header_logo from "../img/AW-header-logo.png";
 
 import phone from "../img/phone.svg";
@@ -44,7 +45,7 @@ const Navbar = class extends React.Component {
         aria-label="main-navigation"
       >
         <div className="container">
-          <div className="flex w-full justify-between py-6 gap-5 md:gap-0">
+          <div className="flex w-full justify-center py-6 gap-5 md:gap-0 relative">
             <div>
               <a
                 href="https://www.vienna.convention.at/en"
@@ -58,7 +59,20 @@ const Navbar = class extends React.Component {
                 />
               </a>
             </div>
-            <div className="navbar-brand">
+            <div className="mr-auto">
+              <a
+                href="https://www.foodbev.com/"
+                title="FoodBev Media"
+                target="_blank"
+              >
+                <img
+                  src={food_logo}
+                  alt="FoodBev Media"
+                  style={{ width: "60px" }}
+                />
+              </a>
+            </div>
+            <div className="navbar-brand md:absolute md:top-6 md:left-auto z-20">
               <Link to="/" className="" title="Logo">
                 <img
                   src={logo}
@@ -80,7 +94,7 @@ const Navbar = class extends React.Component {
                 <span />
               </div>
             </div>
-            <Link to="/aqua-awards" className="hidden md:block">
+            <Link to="/aqua-awards" className="hidden md:block ml-auto">
               <img
                 src={AW_header_logo}
                 alt="Aqua Awards 2023"

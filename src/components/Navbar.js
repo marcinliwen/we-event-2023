@@ -46,7 +46,7 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="flex w-full justify-center py-6 gap-5 md:gap-0 relative">
-            <div>
+            <div className="md:mr-8">
               <a
                 href="https://www.vienna.convention.at/en"
                 title="Meeting Destination Vienna"

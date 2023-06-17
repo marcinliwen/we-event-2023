@@ -59,17 +59,19 @@ const Navbar = class extends React.Component {
                 />
               </a>
             </div>
-            <div className="mr-auto">
+            <div className="mr-auto ">
               <a
                 href="https://www.foodbev.com/"
                 title="FoodBev Media"
                 target="_blank"
+                className="flex flex-col items-center"
               >
                 <img
                   src={food_logo}
                   alt="FoodBev Media"
                   style={{ width: "60px" }}
                 />
+                MEDIA PARTNER
               </a>
             </div>
             <div className="navbar-brand md:absolute md:top-6 md:left-auto z-20">

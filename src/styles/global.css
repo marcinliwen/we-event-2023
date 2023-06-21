@@ -489,3 +489,19 @@ section.inactive {
 .swiper-wrapper {
   transition-timing-function: ease-in-out;
 }
+
+#registration-form,
+.form-cover {
+  position: relative;
+  pointer-events: none;
+}
+.form-cover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #0000001c;
+  z-index: 900;
+}

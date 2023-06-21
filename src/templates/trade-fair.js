@@ -213,12 +213,14 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
       </section>
 
       <PageSubtitle title="Stand Application Form" />
-      <section>
+      <section className="">
         <div className="container">
-          {/* <h3 className="font-bold my-4 text-2xl text-center">All stands have been reserved</h3> */}
+          <h3 className="font-bold my-4 text-2xl text-center">
+            All stands have been reserved
+          </h3>
         </div>
       </section>
-      <section className="">
+      <section className="form-cover py-12">
         <div className="container">
           <div className="">
             <h3 className="font-bold my-4 text-2xl">
@@ -245,7 +247,7 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
               payable.
             </p>
           </div>
-          <div id="registration-form" className="my-8">
+          <div id="registration-form" className="my-8 ">
             <h3 className="font-bold my-4 text-2xl text-center">
               COMPANY DETAILS
             </h3>
@@ -339,7 +341,7 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
                   {/*  <input type="text" name="stand-no" required /> */}
                   <div className="custom-select">
                     <select name="stand-no" required>
-                      <option value="S09 12m2">S09 9m&sup2;</option>
+                      {/* <option value="S09 12m2">S09 9m&sup2;</option> */}
                     </select>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

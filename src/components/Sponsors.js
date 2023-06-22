@@ -6,11 +6,11 @@ const Sponsors = class extends React.Component {
     return (
       <section id="sponsors" className="">
         <div className="container">
-            <div className="flex flex-col md:flex-row my-12">
-          <div className="">
-            <h3 className="mb-4">WE Event Sponsors:</h3>
-            <ul className="md:flex">
-              <li>
+          <div className="flex flex-col md:flex-row my-12">
+            <div className="">
+              <h3 className="mb-4">EVENT SPONSORS:</h3>
+              <ul className="md:flex">
+                {/*    <li>
                 <StaticImage
                   src="../img/sponsors/aboutwater.png"
                   placeholder="none"
@@ -33,16 +33,16 @@ const Sponsors = class extends React.Component {
                   alt="Blupura"
                   className="max-w-[200px] block mx-auto"
                 />
-              </li>
-              <li>
-                <StaticImage
-                  src="../img/sponsors/culligan.png"
-                  placeholder="none"
-                  alt="Culligan"
-                  className="max-w-[200px] block mx-auto"
-                />
-              </li>
-              <li>
+              </li> */}
+                <li>
+                  <StaticImage
+                    src="../img/sponsors/culligan.png"
+                    placeholder="none"
+                    alt="Culligan"
+                    className="max-w-[200px] block mx-auto"
+                  />
+                </li>
+                {/* <li>
                 <StaticImage
                   src="../img/sponsors/greif.png"
                   placeholder="none"
@@ -57,18 +57,18 @@ const Sponsors = class extends React.Component {
                   alt="H2O direct"
                   className="max-w-[200px] block mx-auto"
                 />
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4">WE Media Partner:</h3>
-            <StaticImage
-              src="../img/media/refreshment.png"
-              placeholder="none"
-              alt="Refreshment"
-              className="max-w-[200px] block mx-auto"
-            />
-          </div>
+              </li> */}
+              </ul>
+            </div>
+            {/* <div>
+              <h3 className="mb-4">WE Media Partner:</h3>
+              <StaticImage
+                src="../img/media/refreshment.png"
+                placeholder="none"
+                alt="Refreshment"
+                className="max-w-[200px] block mx-auto"
+              />
+            </div> */}
           </div>
         </div>
       </section>

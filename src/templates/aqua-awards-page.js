@@ -5,11 +5,13 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import PageTitle from "../components/PageTitle";
 import { SEO } from "../components/Seo";
+import TopBanner from "../components/TopBanner";
 
 export const AquaAwardsTemplate = ({ title }) => {
   return (
     <div>
       <PageTitle title={title} />
+      <TopBanner />
       <section>
         <div className="container">
           <div className="py-16 is-side">

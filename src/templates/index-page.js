@@ -5,20 +5,14 @@ import Layout from "../components/Layout";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import { SEO } from "../components/Seo";
 import { StaticImage } from "gatsby-plugin-image";
+import TopBanner from "../components/TopBanner";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({ image, category }) => {
   //console.log(category)
   return (
     <div>
-      <div className="container my-auto">
-        <PreviewCompatibleImage
-          imageInfo={{
-            image: image,
-            alt: "conference",
-          }}
-        />
-      </div>
+      <TopBanner />
       <div className="container py-12">
         <h2 className="text-center mb-8 text-4xl">
           WE Chair’s Welcome Address

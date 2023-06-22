@@ -7,6 +7,7 @@ import PageSubtitle from "../components/PageSubtitle";
 import { StaticImage } from "gatsby-plugin-image";
 import StandTemplate from "../data/standtemplate.json";
 import { SEO } from "../components/Seo";
+import TopBanner from "../components/TopBanner";
 
 export const TradeFairTemplate = ({ title, tradefair, fees }) => {
   const fullStands = StandTemplate.filter((item) => item.name.length > 0).sort(
@@ -19,7 +20,7 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
   return (
     <div>
       <PageTitle title={title} />
-
+      <TopBanner />
       <div className="container">
         <div className="my-8">
           <a

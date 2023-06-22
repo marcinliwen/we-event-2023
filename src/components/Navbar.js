@@ -71,7 +71,7 @@ const Navbar = class extends React.Component {
                   alt="FoodBev Media"
                   style={{ width: "60px" }}
                 />
-                MEDIA PARTNER
+                <span className="text-[10px] mt-2">MEDIA PARTNER</span>
               </a>
             </div>
             <div className="navbar-brand md:absolute md:top-6 md:left-auto z-20">

@@ -22,8 +22,8 @@ const TemplateWrapper = ({ children }) => {
     <div className="h-full grid grid-rows-layout">
       <Navbar />
       <main>{children}</main>
-      {/*  <Sponsors />
-      <Bannerslider /> */}
+      <Sponsors />
+      {/* <Bannerslider /> */}
       <Footer />
       <CookieConsent
         disableStyles={true}

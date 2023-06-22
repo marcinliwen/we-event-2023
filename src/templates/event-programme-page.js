@@ -7,11 +7,13 @@ import PageTitle from "../components/PageTitle";
 import PageSubtitle from "../components/PageSubtitle";
 import Fee from "../components/Fee";
 import { SEO } from "../components/Seo";
+import TopBanner from "../components/TopBanner";
 
 export const EventProgrammeTemplate = ({ title }) => {
   return (
     <div>
       <PageTitle title={title} />
+      <TopBanner />
       {/*  <section>
         <div className="container">
           <div className="md:flex my-16 md:my-20">

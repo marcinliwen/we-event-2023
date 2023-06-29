@@ -12,8 +12,9 @@ import TopBanner from "../components/TopBanner";
 export const EventProgrammeTemplate = ({ title }) => {
   return (
     <div>
-      <PageTitle title={title} />
       <TopBanner />
+      <PageTitle title={title} />
+
       {/*  <section>
         <div className="container">
           <div className="md:flex my-16 md:my-20">

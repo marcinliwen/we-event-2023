@@ -19,8 +19,8 @@ export const TradeFairTemplate = ({ title, tradefair, fees }) => {
   const allStands = fullStands.concat(emptyStands);
   return (
     <div>
-      <PageTitle title={title} />
       <TopBanner />
+      <PageTitle title={title} />
       <div className="container">
         <div className="my-8">
           <a

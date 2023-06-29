@@ -10,8 +10,9 @@ import TopBanner from "../components/TopBanner";
 export const AquaAwardsTemplate = ({ title }) => {
   return (
     <div>
-      <PageTitle title={title} />
       <TopBanner />
+      <PageTitle title={title} />
+
       <section>
         <div className="container">
           <div className="py-16 is-side">

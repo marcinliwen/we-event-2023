@@ -11,8 +11,9 @@ import TopBanner from "../components/TopBanner";
 export const VenueAccommodationTemplate = ({ title, venue, gallery }) => {
   return (
     <div>
-      <PageTitle title={title} />
       <TopBanner />
+      <PageTitle title={title} />
+
       <section id="venue-info">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 p-8 md:py-12 md:px-0">
           <div>

@@ -161,6 +161,7 @@ Baixa Pombalina or Belém as well as Mosteiro do Jeronimos.</p> */}
             <h3 className="font-bold text-3xl text-blue mb-4">
               FRIDAY 27 OCTOBER 2023
             </h3>
+            <h4 className="text-pink uppercase mb-4 text-xl">TRADE FAIR</h4>
             <div className="grid grid-cols-[80px_1fr] gap-y-2 mb-8">
               <span>09:00</span>
               <span>Open</span>
